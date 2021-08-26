@@ -1,0 +1,74 @@
+<svg width="15%" height="15%" viewBox="0 0 400 400"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <desc>
+    Atom with animation
+
+    Teach how to code it - free lesson plan at http://steamcoded.org/lessons
+
+    Interactive model of the first 18 elements of the periodic table (in SVG) at
+    http://steamcoded.org/images/atoms.svg and on the science page
+    http://steamcoded.org/science.html
+
+    by Jay Nick
+    STEAMcoded.org
+  </desc>
+
+  <g transform="rotate(0,200,200)">
+    <path id="p1" d="M150,200A50,150,0,0,1,250,200A50,150,0,0,1,150,200z"
+          style="fill:none;stroke:rgb(200,200,200);stroke-dasharray:3,2;" />
+    <circle r="5" style="fill:#bb3559">
+      <animateMotion dur="30s" repeatCount="indefinite">
+        <mpath xlink:href="#p1" />
+      </animateMotion>
+    </circle>
+  </g>
+  <g transform="rotate(180,200,200)">
+    <circle r="5" style="fill:#bb3559">
+      <animateMotion dur="30s" repeatCount="indefinite">
+        <mpath xlink:href="#p1" />
+      </animateMotion>
+    </circle>
+  </g>
+
+  <g transform="rotate(60,200,200)">
+    <use xlink:href="#p1" />
+    <circle r="5" style="fill:#bb3559">
+      <animateMotion dur="30s" repeatCount="indefinite">
+        <mpath xlink:href="#p1" />
+      </animateMotion>
+    </circle>
+  </g>
+  <g transform="rotate(240,200,200)">
+    <circle r="5" style="fill:#bb3559">
+      <animateMotion dur="30s" repeatCount="indefinite">
+        <mpath xlink:href="#p1" />
+      </animateMotion>
+    </circle>
+  </g>
+
+  <g transform="rotate(120,200,200)">
+    <use xlink:href="#p1" />
+    <circle r="5" style="fill:#bb3559">
+      <animateMotion dur="30s" repeatCount="indefinite">
+        <mpath xlink:href="#p1" />
+      </animateMotion>
+    </circle>
+  </g>
+  <g transform="rotate(300,200,200)">
+    <circle r="5" style="fill:#bb3559">
+      <animateMotion dur="30s" repeatCount="indefinite">
+        <mpath xlink:href="#p1" />
+      </animateMotion>
+    </circle>
+  </g>
+
+  <g id="nucleus" style="stroke:rgb(150,150,150);stroke-width:1px;">
+    <circle cx="204" cy="196" r="8" style="fill:#ffe6ed;" />
+    <circle cx="194" cy="194" r="8" style="fill:#ffe6ed;" />
+    <circle cx="194" cy="200" r="8" style="fill:#ffe6ed;" />
+    <circle cx="206" cy="206" r="8" style="fill:#ffe6ed;" />
+  </g>
+
+</svg>
